@@ -37,6 +37,8 @@ end
 chris = Instructor.new("Chris")
 chris.greet
 
+cristina = Student.new("Cristina")
+cristina.greet
 
 # Testing purposes
 puts "\n--Testing purposes"
