@@ -5,8 +5,8 @@ class Person
 		@name = name
 	end
 # number 5: The best place to put this method is in the class Person:
-	def greet(name)
-		puts "Hi, my name is #{name}"
+	def greet
+		puts "Hi, my name is #{@name}"
 	end
 end
 
@@ -14,7 +14,7 @@ end
 #CLASS STUDENT
 class Student < Person
 
-	def initialize
+	def initialize(name)
 		super(name)
 	end
 
@@ -24,8 +24,9 @@ class Student < Person
 end
 
 #CLASS INSTRUCTOR
-class Instructor
-	def initialize
+class Instructor < Person
+	def initialize(name)
+		super(name)
 	end
 
 	def teach
@@ -33,9 +34,12 @@ class Instructor
 	end
 end
 
+chris = Instructor.new("Chris")
+chris.greet
 
 
 # Testing purposes
-test = Student.new.learn
-test2 = Instructor.new.teach
-test3 = Student.new.greet("Ro")
+puts "\n--Testing purposes"
+test = Student.new("Jhon").learn
+test2 = Instructor.new("CLo").teach
+test3 = Student.new("Ro").greet
