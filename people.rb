@@ -40,8 +40,14 @@ chris.greet
 cristina = Student.new("Cristina")
 cristina.greet
 
+#Below responds to step 8
+chris.teach
+cristina.learn
+#cristina.teach #This code does not work because cristina is a Student object and teach is an Instructor method
+
+
 # Testing purposes
-puts "\n--Testing purposes"
-test = Student.new("Jhon").learn
-test2 = Instructor.new("CLo").teach
-test3 = Student.new("Ro").greet
+# puts "\n--Testing purposes"
+# test = Student.new("Jhon").learn
+# test2 = Instructor.new("CLo").teach
+# test3 = Student.new("Ro").greet
